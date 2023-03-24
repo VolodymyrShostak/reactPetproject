@@ -1,0 +1,172 @@
+.todoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+.todoList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: row;
+}
+.todoText {
+  word-wrap: break-word;
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.deleteBtn {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: rgb(123, 123, 123);
+}
+.changeBtn {
+  display: flex;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: rgb(123, 123, 123);
+}
+
+.completedInput:checked + h4 {
+  text-decoration: line-through;
+}
+
+.formWrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 350px;
+}
+.AddTodoInput {
+  padding: 9px;
+  font-size: 20px;
+  width: 200px;
+  border-width: 0px;
+  color: #000000;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  width: 350px;
+}
+.AddTodoInput:focus {
+  outline: none;
+}
+.addTodoBtn {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: #9bbceb;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  transform: translateY(-50%);
+}
+.addTodoIcon {
+  margin-top: 3px;
+}
+.addTodoIcon:hover {
+  transform: scale(1.2);
+}
+
+/* Modal */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1200;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 150px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.modalTitle {
+  word-wrap: break-word;
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.modalInput {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-width: 1px;
+  color: #000000;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.modalInput:focus {
+  outline: none;
+}
+
+.modalCloseBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(117, 116, 116);
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.modalCorrectBtn {
+  margin-top: 20px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  width: 100%;
+  padding: 0 16px 0 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modalCorrectBtn:hover {
+  background-color: #e4e6eb;
+  color: #050505;
+  font-size: 15px;
+  transition: 0.3s;
+}

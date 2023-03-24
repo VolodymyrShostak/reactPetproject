@@ -1,15 +1,124 @@
-@import-normalize; /* bring in normalize.css styles */
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  padding: 0 15px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+/* nav {
+} */
+
+.headerNavList {
+  display: flex;
+  justify-content: space-between;
+}
+.headerNavItem {
+  display: flex;
+  align-items: center;
+}
+
+.headerNavLink {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 2px 15px;
+}
+
+.headerNavLink.active {
+  border-bottom: 1px solid black;
+}
+
+/* Main */
+.projects {
+  height: 90vh;
+}
+.project {
+  padding-top: 20px;
+  flex-grow: 1;
+}
+.mainSection {
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+}
+
+/* .sidebarList {
+} */
+
+.sideBarItem {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.sidebarLink {
+  display: block;
+  padding: 10px 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sidebarLink.active {
+  color: white;
+  background-color: black;
+}
+
+.sidebarInternalLink {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebarInternalLink.active {
+  color: white;
+  background-color: black;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 1000px;
+  height: 5vh;
+  border-top: 1px solid black;
 }
