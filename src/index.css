@@ -27,18 +27,19 @@ a {
 }
 
 .container {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Header */
 header {
-  padding: 0 15px;
-  height: 5vh;
+  padding: 15px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(179, 188, 160);
 }
 /* nav {
 } */

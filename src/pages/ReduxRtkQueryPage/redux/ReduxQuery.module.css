@@ -1,0 +1,176 @@
+.btnWrapper {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.deleteBtn {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: rgb(123, 123, 123);
+}
+.deleteBtn:hover {
+  color: #f25918;
+}
+.changeBtn {
+  display: flex;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: rgb(123, 123, 123);
+}
+.changeBtn:hover {
+  color: #f2eb18;
+}
+
+.formWrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 350px;
+}
+
+/* Modal */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1200;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  min-height: 150px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.modalTitle {
+  word-wrap: break-word;
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.modalInput {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-width: 1px;
+  color: #000000;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.modalInput:focus {
+  outline: none;
+}
+
+.modalCloseBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(117, 116, 116);
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.modalCorrectBtn {
+  margin-top: 20px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  width: 100%;
+  padding: 0 16px 0 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modalCorrectBtn:hover {
+  background-color: #e4e6eb;
+  color: #050505;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.form {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.formInput {
+  padding: 10px 10px 10px 10px;
+  font-size: 15px;
+  border-width: 1px;
+  color: #000000;
+  border-radius: 6px;
+  width: 100%;
+  height: 30px;
+}
+.formBtn {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+ height: 30px;
+  color: #fff;
+  font-size: 14px;
+  width: 180px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 220px;
+  height: 120px;
+  border: 1px solid #e4e6eb;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  scale: 1.03;
+}

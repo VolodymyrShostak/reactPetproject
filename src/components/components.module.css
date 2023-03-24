@@ -1,0 +1,33 @@
+.sidebar{
+    width: 300px;
+    background-color: antiquewhite;
+}
+.sidebarList{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+/* .sidebarItem{} */
+.sidebarLink{
+    font-weight: 600;
+}
+.sidebarInternalLink {
+    margin-left: 20px;
+}
+.headerNavList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.headerNavLink {
+    font-weight: 600;
+    color: #000000;
+}
+.headerNavLink:hover {
+    color: #f21852;
+}
