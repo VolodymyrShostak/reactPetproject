@@ -1,28 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import css from '../redux/ReduxQuery.module.css';
+import css from './ReduxQuery.module.css';
+import { AiFillCloseCircle } from 'react-icons/ai';
 import { useUpdateGoodMutation } from '../redux/goodsSlice';
 
-import { AiFillCloseCircle } from 'react-icons/ai';
-
-const Modal = ({  id, changeOpenModal }) => {
+const Modal = ({ id, changeOpenModal }) => {
   const [title, setTitle] = useState('');
-  
- 
   const [price, setPrice] = useState('');
   const [descr, setDescr] = useState('');
 
   const [updateGood] = useUpdateGoodMutation();
 
   const onCorrectedBtnClick = async () => {
-   
     try {
-      await updateGood({ id, title , price, descr  });
+      await updateGood({ id, title, price, descr });
     } catch (error) {
       console.log(error);
     }
     changeOpenModal();
-
-    
   };
 
   useEffect(() => {

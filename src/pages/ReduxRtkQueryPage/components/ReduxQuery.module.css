@@ -1,3 +1,16 @@
+.todoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+.todoList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .btnWrapper {
   position: absolute;
   bottom: 5px;
@@ -172,5 +185,5 @@
 }
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  scale: 1.03;
+  
 }
