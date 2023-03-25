@@ -4,14 +4,13 @@ import { AiFillDelete } from 'react-icons/ai';
 import { BsFillGearFill } from 'react-icons/bs';
 import css from '../redux/ReduxQuery.module.css';
 
-
 import { useDeleteGoodMutation } from '../redux/goodsSlice';
 import Modal from './Modal';
 
 const GoodItem = ({ title, descr, price, id }) => {
   const [openModal, setOpenModal] = useState(false);
 
-  const [deleteGood, { isLoading, isError }] = useDeleteGoodMutation();
+  const [deleteGood] = useDeleteGoodMutation();
 
   const onDelete = async () => {
     try {
@@ -32,7 +31,7 @@ const GoodItem = ({ title, descr, price, id }) => {
       <h3>{title}</h3>
       <p>{descr}</p>
       <p>
-        Price:  <span style={{fontWeight: 600 }}>{price}$</span>{' '}
+        Price: <span style={{ fontWeight: 600 }}>{price}$</span>{' '}
       </p>
 
       <div className={css.btnWrapper}>
@@ -44,7 +43,13 @@ const GoodItem = ({ title, descr, price, id }) => {
         </button>
       </div>
       {openModal && (
-        <Modal id={id} price={price} title={title} descr={descr} changeOpenModal={changeOpenModal} />
+        <Modal
+          id={id}
+          price={price}
+          title={title}
+          descr={descr}
+          changeOpenModal={changeOpenModal}
+        />
       )}
     </div>
   );

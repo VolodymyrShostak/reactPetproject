@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useAddGoodMutation } from "../redux/goodsSlice";
 import css from "../redux/ReduxQuery.module.css";
 
-import { GoPlusSmall } from "react-icons/go";
+
 
 const FormGoods = () => {
   const [title, setTitle] = useState("");
@@ -29,7 +29,7 @@ const FormGoods = () => {
         return;
       }
 
-      const { data: res, error } = await addGood(card);
+      await addGood(card);
 
       resetForm();
     } catch (error) {
