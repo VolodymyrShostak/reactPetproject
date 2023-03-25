@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { AiFillDelete } from 'react-icons/ai';
 import { BsFillGearFill } from 'react-icons/bs';
-import css from './ReduxQuery.module.css';
+import css from '../ReduxQuery.module.css';
 
 import { useDeleteGoodMutation } from '../redux/goodsSlice';
 import Modal from './Modal';

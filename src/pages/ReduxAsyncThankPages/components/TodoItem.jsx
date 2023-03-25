@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { deleteTodo, changeCompleted } from "../redux/operations";
 import { useDispatch } from "react-redux";
-import css from "../ReduxToolkitPages.module.css";
+import css from "../ReduxThunkPages.module.css";
 import Modal from "./Modal";
 
 import { AiFillDelete } from "react-icons/ai";

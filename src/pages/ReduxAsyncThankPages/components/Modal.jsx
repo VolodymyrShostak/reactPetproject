@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import css from "../ReduxToolkitPages.module.css";
+import css from "../ReduxThunkPages.module.css";
 import { useDispatch } from "react-redux";
 import { changeTodo } from "../redux/operations";
 

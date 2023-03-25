@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useAddGoodMutation } from "../redux/goodsSlice";
-import css from "./ReduxQuery.module.css";
+import css from "../ReduxQuery.module.css";
 
 
 

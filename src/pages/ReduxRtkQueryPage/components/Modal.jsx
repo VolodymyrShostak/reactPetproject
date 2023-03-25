@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import css from './ReduxQuery.module.css';
+import css from '../ReduxQuery.module.css';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { useUpdateGoodMutation } from '../redux/goodsSlice';
 

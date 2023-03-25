@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/operations";
-import css from "../ReduxToolkitPages.module.css";
+import css from "../ReduxThunkPages.module.css";
 import { nanoid } from "nanoid";
 
 import { GoPlusSmall } from "react-icons/go";

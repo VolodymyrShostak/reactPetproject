@@ -1,6 +1,6 @@
 import React from "react";
 import GoodItem from "./GoodItem";
-import css from "./ReduxQuery.module.css";
+import css from "../ReduxQuery.module.css";
 
 import { useGetGoodsQuery } from "../redux/goodsSlice";
 
