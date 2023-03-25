@@ -11,7 +11,7 @@ const ReduxRtkQueryPage = () => {
         justifyContent: 'center',
        flexDirection: 'column',
         alignItems: 'center',
-        marginLeft: 100,
+        marginLeft: 20,
       }}
     >
       
