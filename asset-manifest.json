@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/reactPetproject/static/css/main.1c9f59a7.css",
-    "main.js": "/reactPetproject/static/js/main.48b7ee08.js",
+    "main.css": "/reactPetproject/static/css/main.84da2248.css",
+    "main.js": "/reactPetproject/static/js/main.8e381db6.js",
     "static/media/logo.png": "/reactPetproject/static/media/logo.b1af14711cdd0e622614.png",
     "index.html": "/reactPetproject/index.html",
-    "main.1c9f59a7.css.map": "/reactPetproject/static/css/main.1c9f59a7.css.map",
-    "main.48b7ee08.js.map": "/reactPetproject/static/js/main.48b7ee08.js.map"
+    "main.84da2248.css.map": "/reactPetproject/static/css/main.84da2248.css.map",
+    "main.8e381db6.js.map": "/reactPetproject/static/js/main.8e381db6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c9f59a7.css",
-    "static/js/main.48b7ee08.js"
+    "static/css/main.84da2248.css",
+    "static/js/main.8e381db6.js"
   ]
 }
